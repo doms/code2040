@@ -1,3 +1,6 @@
+# First time using the requests library and using an API!
+# the documentation was really helpful for getting me started quick!
+
 import requests
 
 info = {'token': '4f36c1b5089b07d3416239291874b956', 'github': 'https://github.com/notdom/code2040'}
