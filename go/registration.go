@@ -14,12 +14,12 @@ type Params struct {
 
 func main() {
 
-	data := &Params {
-		Token: "4f36c1b5089b07d3416239291874b956",
+	data := &Params{
+		Token:  "4f36c1b5089b07d3416239291874b956",
 		Github: "https://github.com/notdom/code2040",
 	}
 
-	res, err := requests.PostJSON("http://challenge.code2040.org/api/register",data)
+	res, err := requests.PostJSON("http://challenge.code2040.org/api/register", data)
 	if err != nil {
 		panic(err)
 	}
