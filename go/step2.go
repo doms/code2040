@@ -22,9 +22,13 @@ type Params struct {
 
 func Reverse(s string) string {
 	runes := []rune(s)
+	fmt.Println("before reverse: ", string(runes))
+
 	for i, j := 0, len(runes)-1; i < j; i, j = i+1, j-1 {
 		runes[i], runes[j] = runes[j], runes[i]
 	}
+
+	fmt.Println("after reverse: ", string(runes))
 	return string(runes)
 }
 
